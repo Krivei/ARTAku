@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ARTAku | Home</title>
-    <link rel="stylesheet" href="{{'assets/styles/pemasukan.css'}}">
+    <link rel="stylesheet" href="{{'assets/styles/edit_income.css'}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body class="d-flex">
@@ -61,56 +61,38 @@
                   </div>
             </div>
         </div>
-        <div class="row" id="home_container">
-          <div class="col-7 d-flex flex-column align-items-end justify-content-end ms-5">
-            <div class="container rounded-4 d-flex flex-column justify-content-center" id="intro_container">
-              <p id="money_text" class="ms-3">Remaining Budget This Month</p>
-              <h3 id="budget" class="ms-3">Rp {{"Data"}}</h3>
-              <p id="money_text" class="ms-3">Remaining Money From All Your Incomes</p>
-              <h3 id="total_money" class="ms-3">Rp {{"Data"}}</h3>
-            </div>
-          </div>
-          <div class="col d-flex flex-column align-items-start justify-content-end me-5">
-            <div class="container rounded-4 d-flex flex-column align-items-center" id="budget_container">
-              <h5 class="mt-3" id="budget_plan_text">Your Budgeting Plan</h5>
-              <img src="{{'assets/images/Strict.png'}}" alt="">
-              <h5 class="mt-1" id="budget_plan_text">{{"Strict"}}</h5>
-              <a href="/budget" id="change_button" class="mb-1 rounded-3 d-flex justify-content-center align-items-center shadow">
-                Change
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="home_container2">
-          <div class="col d-flex flex-column align-items-center justify-content-center ms-5 me-5">
-            <div class="container rounded-4 d-flex flex-column align-items-end " id="latest_container">
-              <h5 class="text-center d-flex flex-column align-items-start justify-content-center ms-5 ps-5" id="expense_caption">Incomes</h5>
-              <div class="container" id="expense_container">
-                {{-- Loop Start --}}
-                <div class="container d-flex justify-content-center flex-column" id="expense_row">
-                  <div class="row">
-                    <div class="col-7 d-flex flex-column align-items-start justify-content-center">
-                      <p>
-                        <h5 id="expense_item" class="mt-2">{{"Sumber Income"}}</h5>
-                        <h5 id="expense_price">+ {{"Income"}}</h5>
-                      </p>
+        <div class="container d-flex justify-content-center align-items-center" id="main_container">
+            <div class="container rounded-4 d-flex flex-column align-items-center" id="create_container">
+              <h1 class="mt-3" id="create_title">Edit Your Income.</h1>
+              <form action="" id="expense_form">
+                  <div class="mb-3">
+                      <label for="expense_description" class="form-label fw-bold">Description</label>
+                      <input type="email" class="form-control" id="expense_description" placeholder="Enter a brief description">
                     </div>
-                    <div class="col d-flex align-items-center justify-content-center">
-                      <a href="/edit_income" class="btn d-flex justify-content-center align-items-center me-4 shadow" id="edit_button">Edit</a>
-                    <a href="" class="me-4" id="delete_expense"><img src="{{'assets/images/mdi_trash.png'}}" alt=""></a>
-                    <a class=" d-flex justify-content-center align-items-center" id="tanggal_expense">{{"Tanggal Expense"}}</a>
+                    <div class="mb-3">
+                      <label for="expense_price" class="form-label fw-bold">Amount</label>
+                      <br>
+                      <div class="row" id="price_row">
+                          <div class="col d-flex justify-content-center align-items-center" id="price_complementer">Rp.
+                           </div>
+                           <div class="col-9 px-0 mx-0">
+                              <input type="number" id="expense_price" class="form-control" placeholder="Enter amount">
+                          </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                {{-- Loop end --}}
-                
-              </div>
-              <a href="/create_income" class="btn rounded-circle d-flex justify-content-center align-items-center me-5 mb-4 shadow" id="create_button"><img src="{{'assets/images/PlusSign_WhiteFill.png'}}" alt="" id="plussign">
-              </a>
-            </div>
-          </div>
 
-        </div>
+                    <div class="mb-3" id="date_picker">
+                      <label for="date_input" id="date_caption" class="fw-bold">Date</label>
+                      <input type="date" id="date_input" class="form-control" placeholder="01/01/2022">
+                    </div>
+                    
+                    <div class="container d-flex justify-content-end align-items-end" id="create_button_container">
+                      <button type="submit" class="btn me-0  shadow rounded-3" id="create_button">Save</button>
+                    </div>
+              </form>
+              
+            </div>
+          </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>

@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="https://kit.fontawesome.com/f0d1171b0d.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ARTAku | Home</title>
-    <link rel="stylesheet" href="{{'assets/styles/pengeluaran.css'}}">
+    <link rel="stylesheet" href="{{'assets/styles/create_expense.css'}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body class="d-flex">
@@ -62,38 +63,43 @@
             </div>
       </div>
         <div class="container d-flex justify-content-center align-items-center" id="main_container">
-          <div class="container rounded-4 d-flex flex-column align-items-end" id="expense_container">
-            <div class="container d-flex justify-content-center align-items-center" id="navbar_container">
-              <ul class="nav" id="inner_nav">
-                <li class="nav-item">
-                  <a class="nav-link" id="container_title">Expenses History</a>
-                </li>
-              
-              </ul>
-            </div>
+          <div class="container rounded-4 d-flex flex-column align-items-center" id="create_container">
+            <h1 class="mt-3" id="create_title">Record Expense.</h1>
+            <form action="" id="expense_form">
+                <div class="mb-3">
+                    <label for="expense_description" class="form-label fw-bold">Description</label>
+                    <input type="email" class="form-control" id="expense_description" placeholder="Enter a brief description">
+                  </div>
+                  <div class="mb-3">
+                    <label for="expense_price" class="form-label fw-bold">Amount</label>
+                    <br>
+                    <div class="row" id="price_row">
+                        <div class="col d-flex justify-content-center align-items-center" id="price_complementer">Rp.
+                         </div>
+                         <div class="col-9 px-0 mx-0">
+                            <input type="number" id="expense_price" class="form-control" placeholder="Enter amount">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="category_dropdown" class="form-label fw-bold">Choose Category</label>
+                    <select class="form-select" id="category_dropdown">
+                        <option selected id="dropdown_placeholder">Category</option>
+                        {{-- loop ini atau tambah option manual--}}
+                        <option value="1">{{"Kategori satu"}}</option>
+                        {{-- loop ini atau tambah option manual--}}
+                      </select>
+                  </div>
+                  <div class="mb-3" id="date_picker">
+                    <label for="date_input" id="date_caption" class="fw-bold">Date</label>
+                    <input type="date" id="date_input" class="form-control" placeholder="01/01/2022">
+                  </div>
+                  
+                  <div class="container d-flex justify-content-end align-items-end" id="create_button_container">
+                    <button type="submit" class="btn me-0 mb-3 shadow rounded-3" id="create_button">Save</button>
+                  </div>
+            </form>
             
-            <div class="container mt-4 position-relative d-flex flex-column align-items-end" id="expense_item_container">
-              {{-- Loop Item Disini --}}
-              <div class="container" id="expense_items">
-                <div class="row" id="item_row">
-                  <div class="col-7 d-flex flex-column align-items-start justify-content-center" id="expense_info">
-                    <p class="mb-0" id="expense_name">{{"Nasi Padang"}}</p>
-                    <p class="mb-0" id="expense_price">- {{"Harga"}}</p>
-                    <p class="mb-0"id="expense_type">{{"Jenis Pengeluaran"}}</p>
-                  </div>
-                  <div class="col d-flex align-items-center justify-content-center">
-                    <a href="/edit_expense" class="btn d-flex justify-content-center align-items-center me-4 shadow" id="edit_button">Edit</a>
-                    <a href="" class="me-4" id="delete_expense"><img src="{{'assets/images/mdi_trash.png'}}" alt=""></a>
-                    <a class=" d-flex justify-content-center align-items-center" id="tanggal_expense">{{"Tanggal Expense"}}</a>
-                  </div>
-                </div>
-              </div>
-              
-              {{-- End Loop Item Disini --}}
-              
-            </div>
-            <a href="/create_expense" class="btn rounded-circle d-flex justify-content-center align-items-center me-5 mb-4 shadow" id="create_button"><img src="{{'assets/images/PlusSign_WhiteFill.png'}}" alt="" id="plussign">
-            </a>
           </div>
         </div>
 

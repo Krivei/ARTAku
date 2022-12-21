@@ -92,6 +92,24 @@ body{
     width: 60px;
     background-color: #2D8049;
 }
+#create_title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+#expense_form{
+    height: 100%;
+    width: 90%;
+    /* background-color: #2D8049; */
+}
+
+#expense_description{
+    font-family: 'Poppins', sans-serif;
+}
+#expense_price{
+    font-family: 'Poppins', sans-serif;
+    width:100%;
+}
 #home_container2{
     width: 100%;
     height: 60%;
@@ -135,9 +153,33 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
+#price_row{
+   
+    width: 100%;
+}
+#price_complementer{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+#create_button{
+    background-color: #2D8049;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    height: 20%;
+    color: white;
+    font-weight: 600;
+}
+#create_button_container{
+    width: 100%;
+    height: 45%;
+    /* background-color: #2D8049; */
+}
+
+#date_input{
+    width: 40%;
+}
 #expense_price{
-    color: #2D8049;
-    font-size: 20px;
+
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -201,6 +243,11 @@ body{
 #upper_frame{
     width: 100%;
     height: 40%;
+}
+#create_container{
+    background-color: white;
+    height: 90%;
+    width: 40%;
 }
 
 #main_container{

@@ -61,6 +61,54 @@
                 </div>
           </div>
       </div>
+      <div class="container d-flex justify-content-center align-items-center" id="budgeting_frame">
+        <div class="container d-flex justify-content-center align-items-center flex-column text-center rounded-4" id="budgeting_container">
+          <h1 id="budget_title">Select Your Monthly Spending Plan.</h1>
+          <form action="" class="budget-now d-flex flex-column justify-content-center align-items-center">
+            <li class="container mb-3">
+              <input type="radio" id="strict" name="budget_mode"/>
+              <label for="strict" id="" class="d-flex flex-column align-items-center justify-content-center text-center rounded-4">
+                <div class="row d-flex justify-content-center align-items-center" id="budget_button_row">
+                <div class="col-3 d-flex flex-column justify-content-center" id="mode_image"><img src="{{'assets/images/Strict.png'}}" alt="" id="budget_icon"></div>
+                <div class="col d-flex flex-column justify-content-center align-items-start" id="mode_text">
+                  <p id="mode_title">Strict</p>
+                  <p id="budget_mode_caption">Save up to 20% of your income.</p>
+                </div>
+                </div>
+              </label>
+            </li>
+            <li class="container mb-3">
+              <input type="radio" id="moderate" name="budget_mode" />
+              <label for="moderate" class="d-flex flex-column align-items-center justify-content-center text-center rounded-4">
+                <div class="row d-flex justify-content-center align-items-center" id="budget_button_row">
+                  <div class="col-3 d-flex flex-column justify-content-center" id="mode_image"><img src="{{'assets/images/Moderate.png'}}" alt="" id="budget_icon_pig"></div>
+                  <div class="col d-flex flex-column justify-content-center align-items-start" id="mode_text">
+                    <p id="mode_title">Moderate</p>
+                    <p id="budget_mode_caption">Save 10 - 15% of your income.</p>
+                  </div>
+                  </div>
+              </label>
+            </li>
+            <li class="container pb-3">
+              <input type="radio" id="lavish" name="budget_mode" />
+              <label for="lavish" class="d-flex flex-column align-items-center justify-content-center text-center rounded-4">
+                <div class="row d-flex justify-content-center align-items-center" id="budget_button_row">
+                  <div class="col-3 d-flex flex-column justify-content-center" id="mode_image"><img src="{{'assets/images/Lavish.png'}}" alt="" id="budget_icon_pig"></div>
+                  <div class="col d-flex flex-column justify-content-center align-items-start" id="mode_text">
+                    <p id="mode_title">Lavish</p>
+                    <p id="budget_mode_caption">Save up to 5% of your income.</p>
+                  </div>
+                  </div>
+              </label>
+            </li>
+            <div class="container d-flex justify-content-end mt-3" id="button_container">
+              <button type="submit" id="budget_submit" class="btn d-flex justify-self-end justify-content-center align-items-center rounded-3 me-2 shadow">
+                Save Selection
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>

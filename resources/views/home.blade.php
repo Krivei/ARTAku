@@ -85,7 +85,7 @@
           </div>
         </div>
         <div class="row" id="home_container2">
-          <div class="col d-flex flex-column align-items-center justify-content-center ms-5">
+          <div class="col d-flex flex-column align-items-center justify-content-center ms-5 me-5">
             <div class="container rounded-4 d-flex flex-column align-items-center " id="latest_container">
               <h5 class="text-center d-flex flex-column align-items-center justify-content-center" id="expense_caption">Your Latest Expenses</h5>
               <div class="container" id="expense_container">
@@ -99,20 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-center me-5">
-            <div class="container rounded-4" id="recurring_container">
-              <h5 class="text-center d-flex flex-column align-items-center justify-content-center" id="expense_caption">Recurring Expenses Reminder</h5>
-              <div class="container" id="expense_container">
-                <div class="container d-flex justify-content-center flex-column" id="expense_row">
-                  <p>
-                    <h5 id="expense_item" class="mt-2">{{"Langganan Indihome"}}</h5>
-                    <h5 id="expense_price">- {{"Harga"}}</h5>
-                    <h5 id="expense_category">{{"Tagihan"}}</h5>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
